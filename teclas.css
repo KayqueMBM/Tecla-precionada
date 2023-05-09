@@ -97,6 +97,7 @@ body{
   }
   .tecla-space-bar span{
     width: 280px;
+    text-align: center;
   }
   .tecla-alt-gr span{
     width: 28px;
