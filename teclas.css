@@ -1,3 +1,10 @@
+body{
+  background-color: #219ebc;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin: 0px;
+}
 .teclado{
     background-color: #03071e;
     padding: 5px 5px 20px;
@@ -173,7 +180,7 @@
     right: 0px;
   }
   .tecla-enter span:hover::after{
-    background-color: #666;
+    background-color: #8ac926;
     cursor: pointer;
   }
   .tecla-enter span:active{
@@ -181,7 +188,7 @@
   }
   .tecla-enter span:active::after{
     box-shadow: 0px 2px 2px #222;
-    background-color: #555;
+    background-color: #8ac926;
   }
   .center{
     position: absolute;
