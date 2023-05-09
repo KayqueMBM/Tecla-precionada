@@ -288,21 +288,23 @@
 
 <script>
     
-document.onkeydown = Pega_Tecla;
-
-function Pega_Tecla(e) 
-{	
-    e = e || window.event;
-
-    tecla = e.keyCode;
-
-    console.log(tecla); // MOSTRA O CÓDIGO DA TECLA PRESSIONADA
-
-    
-
-
-
-}
-</script>
-
+  document.onkeydown = Pega_Tecla;
+  
+  function Pega_Tecla(e) 
+  {   
+      
+      var texto  = e;
+     
+  
+      e = e || window.event;
+      tecla = e.keyCode;
+      if(texto = e){
+          $("teclado center").css({"backgroundColor": "#e63946"});
+          document.getElementById("tecla"+tecla).style.backgroundColor = "#1d3557"; 
+      } 
+      console.log(tecla); // MOSTRA O CÓDIGO DA TECLA PRESSIONADA
+  
+  }
+  </script>
+  <script src="jquery-3.6.4.min.js"></script>
 </html>
